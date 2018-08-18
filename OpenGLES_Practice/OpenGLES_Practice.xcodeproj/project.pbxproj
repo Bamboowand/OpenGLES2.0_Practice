@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FCD76312127F749000617E1 /* RWTBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD762D2127F748000617E1 /* RWTBaseEffect.m */; };
+		1FCD76322127F749000617E1 /* RWTSimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1FCD762E2127F748000617E1 /* RWTSimpleVertex.glsl */; };
+		1FCD76332127F749000617E1 /* RWTSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1FCD76302127F748000617E1 /* RWTSimpleFragment.glsl */; };
 		84FD23362126CA4A00AE4CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD23352126CA4A00AE4CAF /* AppDelegate.m */; };
 		84FD23392126CA4A00AE4CAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD23382126CA4A00AE4CAF /* ViewController.m */; };
 		84FD233C2126CA4A00AE4CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD233A2126CA4A00AE4CAF /* Main.storyboard */; };
@@ -26,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FCD762D2127F748000617E1 /* RWTBaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTBaseEffect.m; sourceTree = "<group>"; };
+		1FCD762E2127F748000617E1 /* RWTSimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleVertex.glsl; sourceTree = "<group>"; };
+		1FCD762F2127F748000617E1 /* RWTBaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTBaseEffect.h; sourceTree = "<group>"; };
+		1FCD76302127F748000617E1 /* RWTSimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleFragment.glsl; sourceTree = "<group>"; };
+		1FCD76342127F7EA000617E1 /* RWTVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTVertex.h; sourceTree = "<group>"; };
 		84FD23312126CA4A00AE4CAF /* OpenGLES1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD23342126CA4A00AE4CAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FD23352126CA4A00AE4CAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +80,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FCD762C2127F748000617E1 /* GLShade */ = {
+			isa = PBXGroup;
+			children = (
+				1FCD76342127F7EA000617E1 /* RWTVertex.h */,
+				1FCD762F2127F748000617E1 /* RWTBaseEffect.h */,
+				1FCD762D2127F748000617E1 /* RWTBaseEffect.m */,
+				1FCD762E2127F748000617E1 /* RWTSimpleVertex.glsl */,
+				1FCD76302127F748000617E1 /* RWTSimpleFragment.glsl */,
+			);
+			path = GLShade;
+			sourceTree = "<group>";
+		};
 		84FD23282126CA4A00AE4CAF = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +139,7 @@
 		84FD23542126CB8B00AE4CAF /* OpenGLES2 */ = {
 			isa = PBXGroup;
 			children = (
+				1FCD762C2127F748000617E1 /* GLShade */,
 				84FD23552126CB8B00AE4CAF /* AppDelegate.h */,
 				84FD23562126CB8B00AE4CAF /* AppDelegate.m */,
 				84FD23582126CB8B00AE4CAF /* ViewController.h */,
@@ -221,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FD23622126CB8F00AE4CAF /* LaunchScreen.storyboard in Resources */,
+				1FCD76322127F749000617E1 /* RWTSimpleVertex.glsl in Resources */,
+				1FCD76332127F749000617E1 /* RWTSimpleFragment.glsl in Resources */,
 				84FD235F2126CB8F00AE4CAF /* Assets.xcassets in Resources */,
 				84FD235D2126CB8B00AE4CAF /* Main.storyboard in Resources */,
 			);
@@ -246,6 +269,7 @@
 				84FD235A2126CB8B00AE4CAF /* ViewController.m in Sources */,
 				84FD23652126CB8F00AE4CAF /* main.m in Sources */,
 				84FD23572126CB8B00AE4CAF /* AppDelegate.m in Sources */,
+				1FCD76312127F749000617E1 /* RWTBaseEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,17 +426,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = N2PW23523R;
+				DEVELOPMENT_TEAM = 5D7TV84WEN;
 				INFOPLIST_FILE = OpenGLES_Practice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "arplanet.OpenGLES-Practice";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "316506c2-da95-4a8c-9b8e-fc8e8b8a340d";
-				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
+				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -422,17 +446,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = N2PW23523R;
+				DEVELOPMENT_TEAM = 5D7TV84WEN;
 				INFOPLIST_FILE = OpenGLES_Practice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "arplanet.OpenGLES-Practice";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "316506c2-da95-4a8c-9b8e-fc8e8b8a340d";
-				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
+				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -442,17 +466,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = N2PW23523R;
+				DEVELOPMENT_TEAM = 5D7TV84WEN;
 				INFOPLIST_FILE = OpenGLES2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = arplanet.OpenGLES2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "316506c2-da95-4a8c-9b8e-fc8e8b8a340d";
-				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
+				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -462,17 +486,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = N2PW23523R;
+				DEVELOPMENT_TEAM = 5D7TV84WEN;
 				INFOPLIST_FILE = OpenGLES2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = arplanet.OpenGLES2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "316506c2-da95-4a8c-9b8e-fc8e8b8a340d";
-				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
+				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
+#import "RWTBaseEffect.h"
+#import "RWTVertex.h"
 
 @interface ViewController : GLKViewController
 

@@ -56,9 +56,9 @@
     
     self.modelViewMatrix = GLKMatrix4Identity;
     modelViewMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ModelViewMatrix");
-    projectionMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ProjectionwMatrix");
+    projectionMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ProjectionMatrix");
     
-    GLint linkSucess;
+    GLint linkSucess; 
     glGetProgramiv(_shaderProgram, GL_LINK_STATUS, &linkSucess);
     if ( linkSucess == GL_FALSE ) {
         GLchar messages[255];

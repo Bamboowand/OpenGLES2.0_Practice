@@ -11,6 +11,7 @@
 #import "BaseVertex.h"
 #import "BaseEffect.h"
 #import "BaseSquare.h"
+#import "BaseCube.h"
 
 @interface ViewController : GLKViewController
 

@@ -11,12 +11,14 @@
 
 typedef enum{
     JJBaseVertexAttributPosition = 0,
-    JJBaseVertexAttributColor
+    JJBaseVertexAttributColor,
+    JJBaseVertexAttributTexCoord
 } JJBaseVertexAttributes;
 
 typedef struct{
     GLfloat Position[3];
     GLfloat Color[4];
+    GLfloat TexCoord[2];
 } JJBaseVertex;
 
 #endif /* JJBaseVertex_h */

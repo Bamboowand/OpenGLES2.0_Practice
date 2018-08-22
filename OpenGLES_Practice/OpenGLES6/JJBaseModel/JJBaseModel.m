@@ -49,6 +49,11 @@
         
         glEnableVertexAttribArray(JJBaseVertexAttributColor);
         glVertexAttribPointer(JJBaseVertexAttributColor, 4, GL_FLOAT, GL_FALSE, sizeof(JJBaseVertex), (const GLvoid *)offsetof(JJBaseVertex, Color));
+        
+        glEnableVertexAttribArray(JJBaseVertexAttributTexCoord);
+        glVertexAttribPointer(JJBaseVertexAttributTexCoord, 2, GL_FLOAT, GL_FALSE, sizeof(JJBaseVertex), (const GLvoid *)offsetof(JJBaseVertex, TexCoord));
+        
+        
         glBindVertexArrayOES(0);
         glBindBuffer(GL_ARRAY_BUFFER, 0);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
@@ -69,6 +74,7 @@
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix {
     GLKMatrix4 modelViewMatrix = GLKMatrix4Multiply(parentModelViewMatrix, [self modelViewMatrix]);
     _shader.modelViewMatrix = modelViewMatrix;
+    _shader.texture =self.texture;
     [_shader prepareToDraw];
     glBindVertexArrayOES(vao_);
     glDrawElements(GL_TRIANGLES, indexCount_, GL_UNSIGNED_BYTE, 0);
@@ -76,6 +82,21 @@
 }
 
 - (void)updateWithDelta:(NSTimeInterval)dt {
+    
+}
+
+- (void)loadTexture:(NSString *)fileName {
+    NSError *error = nil;
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+    
+    NSDictionary *options = @{ GLKTextureLoaderOriginBottomLeft: @YES };
+    GLKTextureInfo *info = [GLKTextureLoader textureWithContentsOfFile:path options:options error:&error];
+    if ( info == nil ) {
+        NSLog(@"Error loading file: %@", error.localizedDescription);
+    }
+    else {
+        self.texture = info.name;
+    }
     
 }
 

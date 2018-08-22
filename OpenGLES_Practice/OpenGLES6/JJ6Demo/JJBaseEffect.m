@@ -11,6 +11,7 @@
 @implementation JJBaseEffect {
     GLuint modelViewMatrixUniform_;
     GLuint projectionMatrixUniform_;
+    GLuint textureUniform_;
 }
 - (instancetype)initWithVertexShader:(NSString *)vertexShader
                       fragmentShader:(NSString *)fragmentShader {
@@ -32,11 +33,13 @@
     
     glBindAttribLocation(_shaderProgram, JJBaseVertexAttributPosition, "a_Position");
     glBindAttribLocation(_shaderProgram, JJBaseVertexAttributColor, "a_Color");
+    glBindAttribLocation(_shaderProgram, JJBaseVertexAttributTexCoord, "a_TexCoord");
     
     glLinkProgram(_shaderProgram);
     
     modelViewMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ModelViewMatrix");
     projectionMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ProjectionMatrix");
+    textureUniform_ = glGetUniformLocation(_shaderProgram, "u_Texture");
     
     GLint linkingSuccess;
     glGetProgramiv(_shaderProgram, GL_LINK_STATUS, &linkingSuccess);
@@ -80,5 +83,9 @@
     glUseProgram(_shaderProgram);
     glUniformMatrix4fv(modelViewMatrixUniform_, 1, 0, self.modelViewMatrix.m);
     glUniformMatrix4fv(projectionMatrixUniform_, 1, 0, self.projectionMatrix.m);
+    
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, self.texture);
+    glUniform1f(textureUniform_, 1);
 }
 @end

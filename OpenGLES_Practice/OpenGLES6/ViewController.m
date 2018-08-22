@@ -15,13 +15,15 @@
 @implementation ViewController {
     JJBaseEffect *shaderProgram_;
     JJBaseSquare *square_;
+    JJBaseCube *cube_;
     
 }
 
 - (void)setupScene {
     shaderProgram_ = [[JJBaseEffect alloc] initWithVertexShader:@"JJBaseSimpleVertex.glsl" fragmentShader:@"JJBaseSimpleFragment.glsl"];
     shaderProgram_.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(85.0), self.view.bounds.size.width / self.view.bounds.size.height, 1, 150);
-    square_ = [[JJBaseSquare alloc] initWithShader:shaderProgram_];
+//    square_ = [[JJBaseSquare alloc] initWithShader:shaderProgram_];
+    cube_ = [[JJBaseCube alloc] initWithShader:shaderProgram_];
 }
 
 #pragma mark - View life circle
@@ -29,6 +31,7 @@
     [super viewDidLoad];
     GLKView *glView = (GLKView *)self.view;
     glView.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    glView.drawableDepthFormat = GLKViewDrawableDepthFormat16;
     [EAGLContext setCurrentContext:glView.context];
     
     [self setupScene];
@@ -37,13 +40,17 @@
 #pragma mark - GLKView delegate methods
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     glClearColor(0, 100.0/255.0, 50.0/255.0, 1);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
     GLKMatrix4 viewMatrix = GLKMatrix4MakeTranslation(0, -1, -5);
-    [square_ renderWithParentModelViewMatrix:viewMatrix];
+//    [square_ renderWithParentModelViewMatrix:viewMatrix];
+    [cube_ renderWithParentModelViewMatrix:viewMatrix];
 }
 
 - (void)update {
-    [square_ updateWithDelta:self.timeSinceLastUpdate];
+//    [square_ updateWithDelta:self.timeSinceLastUpdate];
+    [cube_ updateWithDelta:self.timeSinceLastUpdate];
 }
 
 

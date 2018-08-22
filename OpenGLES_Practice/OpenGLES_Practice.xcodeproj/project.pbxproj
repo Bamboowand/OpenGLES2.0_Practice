@@ -61,6 +61,7 @@
 		1FCD76AD212B14D6000617E1 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD76AC212B14D6000617E1 /* BaseModel.m */; };
 		1FCD76B1212B18A6000617E1 /* BaseSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD76B0212B18A6000617E1 /* BaseSquare.m */; };
 		8440609F212BB7CE001267B5 /* BaseCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440609E212BB7CD001267B5 /* BaseCube.m */; };
+		84EC3637212D0CF60029FC04 /* JJBaseCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC3636212D0CF60029FC04 /* JJBaseCube.m */; };
 		84FD23362126CA4A00AE4CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD23352126CA4A00AE4CAF /* AppDelegate.m */; };
 		84FD23392126CA4A00AE4CAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD23382126CA4A00AE4CAF /* ViewController.m */; };
 		84FD233C2126CA4A00AE4CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD233A2126CA4A00AE4CAF /* Main.storyboard */; };
@@ -159,6 +160,8 @@
 		1FCD76B0212B18A6000617E1 /* BaseSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSquare.m; sourceTree = "<group>"; };
 		8440609D212BB7CD001267B5 /* BaseCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCube.h; sourceTree = "<group>"; };
 		8440609E212BB7CD001267B5 /* BaseCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCube.m; sourceTree = "<group>"; };
+		84EC3635212D0CF60029FC04 /* JJBaseCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJBaseCube.h; sourceTree = "<group>"; };
+		84EC3636212D0CF60029FC04 /* JJBaseCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJBaseCube.m; sourceTree = "<group>"; };
 		84FD23312126CA4A00AE4CAF /* OpenGLES1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD23342126CA4A00AE4CAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FD23352126CA4A00AE4CAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -278,6 +281,8 @@
 				1F313EA4212C6B5600B1D96B /* JJBaseModel.m */,
 				1F313EA7212C6FA000B1D96B /* JJBaseSquare.h */,
 				1F313EA8212C6FA000B1D96B /* JJBaseSquare.m */,
+				84EC3635212D0CF60029FC04 /* JJBaseCube.h */,
+				84EC3636212D0CF60029FC04 /* JJBaseCube.m */,
 			);
 			path = JJBaseModel;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC3637212D0CF60029FC04 /* JJBaseCube.m in Sources */,
 				1F313E88212C639800B1D96B /* ViewController.m in Sources */,
 				1F313EA9212C6FA000B1D96B /* JJBaseSquare.m in Sources */,
 				1F313E9B212C64F400B1D96B /* JJBaseEffect.m in Sources */,

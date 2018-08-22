@@ -11,6 +11,7 @@
 #import "JJ6Demo/JJBaseEffect.h"
 #import "JJ6Demo/JJBaseVertex.h"
 #import "JJBaseSquare.h"
+#import "JJBaseCube.h"
 
 @interface ViewController : GLKViewController
 

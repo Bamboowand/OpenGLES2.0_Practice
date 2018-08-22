@@ -10,11 +10,14 @@
 
 @implementation JJBaseEffect {
     GLuint modelViewMatrixUniform_;
+    GLuint projectionMatrixUniform_;
 }
 - (instancetype)initWithVertexShader:(NSString *)vertexShader
                       fragmentShader:(NSString *)fragmentShader {
     if ( self = [super init] ) {
         [self compileVertexShader:vertexShader fragmentShader:fragmentShader];
+        self.modelViewMatrix = GLKMatrix4Identity;
+        self.projectionMatrix = GLKMatrix4Identity;
     }
     return self;
 }
@@ -27,15 +30,13 @@
     glAttachShader(_shaderProgram, vertexShaderName);
     glAttachShader(_shaderProgram, fragmentShaderName);
     
-    glEnableVertexAttribArray(JJBaseVertexAttributPosition);
     glBindAttribLocation(_shaderProgram, JJBaseVertexAttributPosition, "a_Position");
-    
-    glEnableVertexAttribArray(JJBaseVertexAttributColor);
     glBindAttribLocation(_shaderProgram, JJBaseVertexAttributColor, "a_Color");
     
     glLinkProgram(_shaderProgram);
     
-    modelViewMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ModelViewMartrix");
+    modelViewMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ModelViewMatrix");
+    projectionMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ProjectionMatrix");
     
     GLint linkingSuccess;
     glGetProgramiv(_shaderProgram, GL_LINK_STATUS, &linkingSuccess);
@@ -77,6 +78,7 @@
 
 - (void)prepareToDraw {
     glUseProgram(_shaderProgram);
-    glUniformMatrix4fv(modelViewMatrixUniform_, 1, 0, _modelViewMatrix.m);
+    glUniformMatrix4fv(modelViewMatrixUniform_, 1, 0, self.modelViewMatrix.m);
+    glUniformMatrix4fv(projectionMatrixUniform_, 1, 0, self.projectionMatrix.m);
 }
 @end

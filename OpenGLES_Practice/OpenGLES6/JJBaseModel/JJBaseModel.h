@@ -15,10 +15,10 @@
 @interface JJBaseModel : NSObject
 @property(nonatomic, strong)JJBaseEffect *shader;
 @property(nonatomic, assign) GLKVector3 position;
-@property(nonatomic, assign) float retationX;
-@property(nonatomic, assign) float retationY;
-@property(nonatomic, assign) float retationZ;
-@property(nonatomic, assign) float scale;
+@property(nonatomic) float rotationX;
+@property(nonatomic) float rotationY;
+@property(nonatomic) float rotationZ;
+@property(nonatomic) float scale;
 
 - (instancetype)initWithName:(char *)name
                       shader:(JJBaseEffect *)shader
@@ -27,6 +27,7 @@
                     indeices:(GLubyte *)indeices
                   indexCount:(unsigned int)indexCount;
 
-- (void)render;
+- (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix;
+- (void)updateWithDelta:(NSTimeInterval)dt;
 
 @end

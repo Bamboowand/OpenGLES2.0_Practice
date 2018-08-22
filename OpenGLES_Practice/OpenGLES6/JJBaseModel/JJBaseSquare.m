@@ -28,4 +28,8 @@ const static GLubyte indeices[] = {
     return self;
 }
 
+- (void)updateWithDelta:(NSTimeInterval)dt {
+    float secsPreMov = 2.0;
+    self.position = GLKVector3Make(sinf(CACurrentMediaTime() * 2 * M_PI / secsPreMov), self.position.y, self.position.z);
+}
 @end

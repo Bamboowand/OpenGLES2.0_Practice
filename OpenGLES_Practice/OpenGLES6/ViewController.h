@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
-#import "JJBaseEffect.h"
-#import "JJBaseVertex.h"
+#import "JJ6Demo/JJBaseEffect.h"
+#import "JJ6Demo/JJBaseVertex.h"
 #import "JJBaseSquare.h"
 
 @interface ViewController : GLKViewController

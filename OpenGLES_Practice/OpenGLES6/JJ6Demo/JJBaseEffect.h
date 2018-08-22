@@ -14,6 +14,8 @@
 
 @property(nonatomic, assign) GLuint shaderProgram;
 @property(nonatomic, assign) GLKMatrix4 modelViewMatrix;
+@property(nonatomic, assign) GLKMatrix4 projectionMatrix;
+
 
 - (instancetype)initWithVertexShader:(NSString *)vertexShader
                       fragmentShader:(NSString *)fragmentShader;

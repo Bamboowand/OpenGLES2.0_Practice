@@ -20,6 +20,20 @@
 		1F313EA2212C6AB600B1D96B /* JJBaseSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EA1212C6AB600B1D96B /* JJBaseSimpleFragment.glsl */; };
 		1F313EA5212C6B5600B1D96B /* JJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EA4212C6B5600B1D96B /* JJBaseModel.m */; };
 		1F313EA9212C6FA000B1D96B /* JJBaseSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EA8212C6FA000B1D96B /* JJBaseSquare.m */; };
+		1F313EB2212DB72800B1D96B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EB1212DB72800B1D96B /* AppDelegate.m */; };
+		1F313EB5212DB72800B1D96B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EB4212DB72800B1D96B /* ViewController.m */; };
+		1F313EB8212DB72800B1D96B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EB6212DB72800B1D96B /* Main.storyboard */; };
+		1F313EBA212DB72900B1D96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EB9212DB72900B1D96B /* Assets.xcassets */; };
+		1F313EBD212DB72900B1D96B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EBB212DB72900B1D96B /* LaunchScreen.storyboard */; };
+		1F313EC0212DB72900B1D96B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EBF212DB72900B1D96B /* main.m */; };
+		1F313EC4212DB77200B1D96B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD234B2126CA7F00AE4CAF /* GLKit.framework */; };
+		1F313EC5212DB77200B1D96B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD234C2126CA7F00AE4CAF /* OpenGLES.framework */; };
+		1F313EC6212DB77700B1D96B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC3638212D17C10029FC04 /* test.png */; };
+		1F313EC9212DB80400B1D96B /* AmbientSimpleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EC8212DB80400B1D96B /* AmbientSimpleEffect.m */; };
+		1F313ECD212DB84800B1D96B /* AmbientVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1F313ECC212DB84800B1D96B /* AmbientVertex.glsl */; };
+		1F313ECF212DB86C00B1D96B /* AmbientFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1F313ECE212DB86C00B1D96B /* AmbientFragment.glsl */; };
+		1F313ED2212DBEAA00B1D96B /* AmbientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313ED1212DBEAA00B1D96B /* AmbientModel.m */; };
+		1F313ED6212DC32600B1D96B /* AmbientSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313ED5212DC32600B1D96B /* AmbientSquare.m */; };
 		1FCD76312127F749000617E1 /* RWTBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD762D2127F748000617E1 /* RWTBaseEffect.m */; };
 		1FCD76322127F749000617E1 /* RWTSimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1FCD762E2127F748000617E1 /* RWTSimpleVertex.glsl */; };
 		1FCD76332127F749000617E1 /* RWTSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1FCD76302127F748000617E1 /* RWTSimpleFragment.glsl */; };
@@ -101,6 +115,25 @@
 		1F313EA4212C6B5600B1D96B /* JJBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJBaseModel.m; sourceTree = "<group>"; };
 		1F313EA7212C6FA000B1D96B /* JJBaseSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJBaseSquare.h; sourceTree = "<group>"; };
 		1F313EA8212C6FA000B1D96B /* JJBaseSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJBaseSquare.m; sourceTree = "<group>"; };
+		1F313EAE212DB72800B1D96B /* OpenGLES7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F313EB0212DB72800B1D96B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F313EB1212DB72800B1D96B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F313EB3212DB72800B1D96B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F313EB4212DB72800B1D96B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F313EB7212DB72800B1D96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F313EB9212DB72900B1D96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F313EBC212DB72900B1D96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F313EBE212DB72900B1D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F313EBF212DB72900B1D96B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F313EC7212DB80400B1D96B /* AmbientSimpleEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbientSimpleEffect.h; sourceTree = "<group>"; };
+		1F313EC8212DB80400B1D96B /* AmbientSimpleEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbientSimpleEffect.m; sourceTree = "<group>"; };
+		1F313ECB212DB82D00B1D96B /* AmbientVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbientVertex.h; sourceTree = "<group>"; };
+		1F313ECC212DB84800B1D96B /* AmbientVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AmbientVertex.glsl; sourceTree = "<group>"; };
+		1F313ECE212DB86C00B1D96B /* AmbientFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = AmbientFragment.glsl; sourceTree = "<group>"; };
+		1F313ED0212DBEAA00B1D96B /* AmbientModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbientModel.h; sourceTree = "<group>"; };
+		1F313ED1212DBEAA00B1D96B /* AmbientModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbientModel.m; sourceTree = "<group>"; };
+		1F313ED4212DC32600B1D96B /* AmbientSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbientSquare.h; sourceTree = "<group>"; };
+		1F313ED5212DC32600B1D96B /* AmbientSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbientSquare.m; sourceTree = "<group>"; };
 		1FCD762D2127F748000617E1 /* RWTBaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTBaseEffect.m; sourceTree = "<group>"; };
 		1FCD762E2127F748000617E1 /* RWTSimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleVertex.glsl; sourceTree = "<group>"; };
 		1FCD762F2127F748000617E1 /* RWTBaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTBaseEffect.h; sourceTree = "<group>"; };
@@ -198,6 +231,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F313EAB212DB72800B1D96B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F313EC4212DB77200B1D96B /* GLKit.framework in Frameworks */,
+				1F313EC5212DB77200B1D96B /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FCD763621286808000617E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +330,47 @@
 				84EC3636212D0CF60029FC04 /* JJBaseCube.m */,
 			);
 			path = JJBaseModel;
+			sourceTree = "<group>";
+		};
+		1F313EAF212DB72800B1D96B /* OpenGLES7 */ = {
+			isa = PBXGroup;
+			children = (
+				1F313EB0212DB72800B1D96B /* AppDelegate.h */,
+				1F313EB1212DB72800B1D96B /* AppDelegate.m */,
+				1F313EB3212DB72800B1D96B /* ViewController.h */,
+				1F313EB4212DB72800B1D96B /* ViewController.m */,
+				1F313ED3212DBEAE00B1D96B /* AmbientModels */,
+				1F313ECA212DB80C00B1D96B /* AmbientDemo */,
+				1F313EB6212DB72800B1D96B /* Main.storyboard */,
+				1F313EB9212DB72900B1D96B /* Assets.xcassets */,
+				1F313EBB212DB72900B1D96B /* LaunchScreen.storyboard */,
+				1F313EBE212DB72900B1D96B /* Info.plist */,
+				1F313EBF212DB72900B1D96B /* main.m */,
+			);
+			path = OpenGLES7;
+			sourceTree = "<group>";
+		};
+		1F313ECA212DB80C00B1D96B /* AmbientDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1F313ECB212DB82D00B1D96B /* AmbientVertex.h */,
+				1F313ECC212DB84800B1D96B /* AmbientVertex.glsl */,
+				1F313ECE212DB86C00B1D96B /* AmbientFragment.glsl */,
+				1F313EC7212DB80400B1D96B /* AmbientSimpleEffect.h */,
+				1F313EC8212DB80400B1D96B /* AmbientSimpleEffect.m */,
+			);
+			path = AmbientDemo;
+			sourceTree = "<group>";
+		};
+		1F313ED3212DBEAE00B1D96B /* AmbientModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F313ED0212DBEAA00B1D96B /* AmbientModel.h */,
+				1F313ED1212DBEAA00B1D96B /* AmbientModel.m */,
+				1F313ED4212DC32600B1D96B /* AmbientSquare.h */,
+				1F313ED5212DC32600B1D96B /* AmbientSquare.m */,
+			);
+			path = AmbientModels;
 			sourceTree = "<group>";
 		};
 		1FCD762C2127F748000617E1 /* GLShade */ = {
@@ -418,6 +501,7 @@
 				1FCD765F2128E969000617E1 /* OpenGLES4 */,
 				1FCD768B2129C9F7000617E1 /* OpenGLES5 */,
 				1F313E82212C639800B1D96B /* OpenGLES6 */,
+				1F313EAF212DB72800B1D96B /* OpenGLES7 */,
 				84FD23322126CA4A00AE4CAF /* Products */,
 				84FD234A2126CA7E00AE4CAF /* Frameworks */,
 			);
@@ -432,6 +516,7 @@
 				1FCD765E2128E969000617E1 /* OpenGLES4.app */,
 				1FCD768A2129C9F7000617E1 /* OpenGLES5.app */,
 				1F313E81212C639800B1D96B /* OpenGLES6.app */,
+				1F313EAE212DB72800B1D96B /* OpenGLES7.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -496,6 +581,23 @@
 			name = OpenGLES6;
 			productName = OpenGLES6;
 			productReference = 1F313E81212C639800B1D96B /* OpenGLES6.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F313EAD212DB72800B1D96B /* OpenGLES7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F313EC3212DB72900B1D96B /* Build configuration list for PBXNativeTarget "OpenGLES7" */;
+			buildPhases = (
+				1F313EAA212DB72800B1D96B /* Sources */,
+				1F313EAB212DB72800B1D96B /* Frameworks */,
+				1F313EAC212DB72800B1D96B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLES7;
+			productName = OpenGLES7;
+			productReference = 1F313EAE212DB72800B1D96B /* OpenGLES7.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1FCD763821286808000617E1 /* OpenGLES3 */ = {
@@ -595,6 +697,9 @@
 					1F313E80212C639800B1D96B = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					1F313EAD212DB72800B1D96B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					1FCD763821286808000617E1 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -631,6 +736,7 @@
 				1FCD765D2128E969000617E1 /* OpenGLES4 */,
 				1FCD76892129C9F7000617E1 /* OpenGLES5 */,
 				1F313E80212C639800B1D96B /* OpenGLES6 */,
+				1F313EAD212DB72800B1D96B /* OpenGLES7 */,
 			);
 		};
 /* End PBXProject section */
@@ -646,6 +752,19 @@
 				1F313EA0212C6A0500B1D96B /* JJBaseSimpleVertex.glsl in Resources */,
 				1F313E8B212C639800B1D96B /* Main.storyboard in Resources */,
 				84EC3639212D17C10029FC04 /* test.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F313EAC212DB72800B1D96B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F313EBD212DB72900B1D96B /* LaunchScreen.storyboard in Resources */,
+				1F313ECD212DB84800B1D96B /* AmbientVertex.glsl in Resources */,
+				1F313ECF212DB86C00B1D96B /* AmbientFragment.glsl in Resources */,
+				1F313EBA212DB72900B1D96B /* Assets.xcassets in Resources */,
+				1F313EB8212DB72800B1D96B /* Main.storyboard in Resources */,
+				1F313EC6212DB77700B1D96B /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,6 +843,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F313EAA212DB72800B1D96B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F313EB5212DB72800B1D96B /* ViewController.m in Sources */,
+				1F313ED2212DBEAA00B1D96B /* AmbientModel.m in Sources */,
+				1F313EC0212DB72900B1D96B /* main.m in Sources */,
+				1F313ED6212DC32600B1D96B /* AmbientSquare.m in Sources */,
+				1F313EB2212DB72800B1D96B /* AppDelegate.m in Sources */,
+				1F313EC9212DB80400B1D96B /* AmbientSimpleEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FCD763521286808000617E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -798,6 +930,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				1F313E8F212C639800B1D96B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1F313EB6212DB72800B1D96B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F313EB7212DB72800B1D96B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F313EBB212DB72900B1D96B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F313EBC212DB72900B1D96B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -918,6 +1066,46 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice6";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F313EC1212DB72900B1D96B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5D7TV84WEN;
+				INFOPLIST_FILE = OpenGLES7/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice7";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F313EC2212DB72900B1D96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5D7TV84WEN;
+				INFOPLIST_FILE = OpenGLES7/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
 				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
@@ -1243,6 +1431,15 @@
 			buildConfigurations = (
 				1F313E94212C639800B1D96B /* Debug */,
 				1F313E95212C639800B1D96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F313EC3212DB72900B1D96B /* Build configuration list for PBXNativeTarget "OpenGLES7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F313EC1212DB72900B1D96B /* Debug */,
+				1F313EC2212DB72900B1D96B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

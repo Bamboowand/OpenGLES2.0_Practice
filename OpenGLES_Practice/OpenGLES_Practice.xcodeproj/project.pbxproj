@@ -34,6 +34,22 @@
 		1F313ECF212DB86C00B1D96B /* AmbientFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1F313ECE212DB86C00B1D96B /* AmbientFragment.glsl */; };
 		1F313ED2212DBEAA00B1D96B /* AmbientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313ED1212DBEAA00B1D96B /* AmbientModel.m */; };
 		1F313ED6212DC32600B1D96B /* AmbientSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313ED5212DC32600B1D96B /* AmbientSquare.m */; };
+		1F313EDF212F0AC700B1D96B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EDE212F0AC700B1D96B /* AppDelegate.m */; };
+		1F313EE2212F0AC700B1D96B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EE1212F0AC700B1D96B /* ViewController.m */; };
+		1F313EE5212F0AC700B1D96B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EE3212F0AC700B1D96B /* Main.storyboard */; };
+		1F313EE7212F0AC900B1D96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EE6212F0AC900B1D96B /* Assets.xcassets */; };
+		1F313EEA212F0AC900B1D96B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EE8212F0AC900B1D96B /* LaunchScreen.storyboard */; };
+		1F313EED212F0AC900B1D96B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EEC212F0AC900B1D96B /* main.m */; };
+		1F313EF1212F0AEE00B1D96B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD234B2126CA7F00AE4CAF /* GLKit.framework */; };
+		1F313EF2212F0AEE00B1D96B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD234C2126CA7F00AE4CAF /* OpenGLES.framework */; };
+		1F313EF3212F0AF500B1D96B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC3638212D17C10029FC04 /* test.png */; };
+		1F313EF4212F0AF900B1D96B /* dungeon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BD1575212E5CE40065B0F0 /* dungeon.png */; };
+		1F313EF8212F0BE000B1D96B /* DiffuseBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EF7212F0BE000B1D96B /* DiffuseBaseEffect.m */; };
+		1F313EFB212F0C0B00B1D96B /* DiffuseVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EFA212F0C0B00B1D96B /* DiffuseVertexShader.glsl */; };
+		1F313EFD212F0C3000B1D96B /* DiffuseFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1F313EFC212F0C3000B1D96B /* DiffuseFragmentShader.glsl */; };
+		1F313F00212F115D00B1D96B /* DiffuseBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313EFF212F115D00B1D96B /* DiffuseBaseModel.m */; };
+		1F313F07212F15F800B1D96B /* DiffuseSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313F06212F15F800B1D96B /* DiffuseSquare.m */; };
+		1F313F0A212F1D9300B1D96B /* DiffuseCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F313F09212F1D9300B1D96B /* DiffuseCube.m */; };
 		1FCD76312127F749000617E1 /* RWTBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD762D2127F748000617E1 /* RWTBaseEffect.m */; };
 		1FCD76322127F749000617E1 /* RWTSimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1FCD762E2127F748000617E1 /* RWTSimpleVertex.glsl */; };
 		1FCD76332127F749000617E1 /* RWTSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1FCD76302127F748000617E1 /* RWTSimpleFragment.glsl */; };
@@ -136,6 +152,27 @@
 		1F313ED1212DBEAA00B1D96B /* AmbientModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbientModel.m; sourceTree = "<group>"; };
 		1F313ED4212DC32600B1D96B /* AmbientSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbientSquare.h; sourceTree = "<group>"; };
 		1F313ED5212DC32600B1D96B /* AmbientSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbientSquare.m; sourceTree = "<group>"; };
+		1F313EDB212F0AC700B1D96B /* OpenGLES8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F313EDD212F0AC700B1D96B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F313EDE212F0AC700B1D96B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F313EE0212F0AC700B1D96B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F313EE1212F0AC700B1D96B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F313EE4212F0AC700B1D96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F313EE6212F0AC900B1D96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F313EE9212F0AC900B1D96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F313EEB212F0AC900B1D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F313EEC212F0AC900B1D96B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F313EF5212F0B4700B1D96B /* DiffuseVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffuseVertex.h; sourceTree = "<group>"; };
+		1F313EF6212F0BE000B1D96B /* DiffuseBaseEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffuseBaseEffect.h; sourceTree = "<group>"; };
+		1F313EF7212F0BE000B1D96B /* DiffuseBaseEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiffuseBaseEffect.m; sourceTree = "<group>"; };
+		1F313EFA212F0C0B00B1D96B /* DiffuseVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DiffuseVertexShader.glsl; sourceTree = "<group>"; };
+		1F313EFC212F0C3000B1D96B /* DiffuseFragmentShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DiffuseFragmentShader.glsl; sourceTree = "<group>"; };
+		1F313EFE212F115D00B1D96B /* DiffuseBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffuseBaseModel.h; sourceTree = "<group>"; };
+		1F313EFF212F115D00B1D96B /* DiffuseBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiffuseBaseModel.m; sourceTree = "<group>"; };
+		1F313F05212F15F800B1D96B /* DiffuseSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffuseSquare.h; sourceTree = "<group>"; };
+		1F313F06212F15F800B1D96B /* DiffuseSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiffuseSquare.m; sourceTree = "<group>"; };
+		1F313F08212F1D9300B1D96B /* DiffuseCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffuseCube.h; sourceTree = "<group>"; };
+		1F313F09212F1D9300B1D96B /* DiffuseCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiffuseCube.m; sourceTree = "<group>"; };
 		1FCD762D2127F748000617E1 /* RWTBaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTBaseEffect.m; sourceTree = "<group>"; };
 		1FCD762E2127F748000617E1 /* RWTSimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RWTSimpleVertex.glsl; sourceTree = "<group>"; };
 		1FCD762F2127F748000617E1 /* RWTBaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTBaseEffect.h; sourceTree = "<group>"; };
@@ -242,6 +279,15 @@
 			files = (
 				1F313EC4212DB77200B1D96B /* GLKit.framework in Frameworks */,
 				1F313EC5212DB77200B1D96B /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F313ED8212F0AC700B1D96B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F313EF1212F0AEE00B1D96B /* GLKit.framework in Frameworks */,
+				1F313EF2212F0AEE00B1D96B /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +427,49 @@
 			path = AmbientModels;
 			sourceTree = "<group>";
 		};
+		1F313EDC212F0AC700B1D96B /* OpenGLES8 */ = {
+			isa = PBXGroup;
+			children = (
+				1F313EDD212F0AC700B1D96B /* AppDelegate.h */,
+				1F313EDE212F0AC700B1D96B /* AppDelegate.m */,
+				1F313EE0212F0AC700B1D96B /* ViewController.h */,
+				1F313EE1212F0AC700B1D96B /* ViewController.m */,
+				1F313F01212F116300B1D96B /* DiffuseModels */,
+				1F313EF9212F0BE600B1D96B /* DiffuseDemo */,
+				1F313EE3212F0AC700B1D96B /* Main.storyboard */,
+				1F313EE6212F0AC900B1D96B /* Assets.xcassets */,
+				1F313EE8212F0AC900B1D96B /* LaunchScreen.storyboard */,
+				1F313EEB212F0AC900B1D96B /* Info.plist */,
+				1F313EEC212F0AC900B1D96B /* main.m */,
+			);
+			path = OpenGLES8;
+			sourceTree = "<group>";
+		};
+		1F313EF9212F0BE600B1D96B /* DiffuseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1F313EF5212F0B4700B1D96B /* DiffuseVertex.h */,
+				1F313EF6212F0BE000B1D96B /* DiffuseBaseEffect.h */,
+				1F313EF7212F0BE000B1D96B /* DiffuseBaseEffect.m */,
+				1F313EFA212F0C0B00B1D96B /* DiffuseVertexShader.glsl */,
+				1F313EFC212F0C3000B1D96B /* DiffuseFragmentShader.glsl */,
+			);
+			path = DiffuseDemo;
+			sourceTree = "<group>";
+		};
+		1F313F01212F116300B1D96B /* DiffuseModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F313EFE212F115D00B1D96B /* DiffuseBaseModel.h */,
+				1F313EFF212F115D00B1D96B /* DiffuseBaseModel.m */,
+				1F313F05212F15F800B1D96B /* DiffuseSquare.h */,
+				1F313F06212F15F800B1D96B /* DiffuseSquare.m */,
+				1F313F08212F1D9300B1D96B /* DiffuseCube.h */,
+				1F313F09212F1D9300B1D96B /* DiffuseCube.m */,
+			);
+			path = DiffuseModels;
+			sourceTree = "<group>";
+		};
 		1FCD762C2127F748000617E1 /* GLShade */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +599,7 @@
 				1FCD768B2129C9F7000617E1 /* OpenGLES5 */,
 				1F313E82212C639800B1D96B /* OpenGLES6 */,
 				1F313EAF212DB72800B1D96B /* OpenGLES7 */,
+				1F313EDC212F0AC700B1D96B /* OpenGLES8 */,
 				84FD23322126CA4A00AE4CAF /* Products */,
 				84FD234A2126CA7E00AE4CAF /* Frameworks */,
 			);
@@ -525,6 +615,7 @@
 				1FCD768A2129C9F7000617E1 /* OpenGLES5.app */,
 				1F313E81212C639800B1D96B /* OpenGLES6.app */,
 				1F313EAE212DB72800B1D96B /* OpenGLES7.app */,
+				1F313EDB212F0AC700B1D96B /* OpenGLES8.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -606,6 +697,23 @@
 			name = OpenGLES7;
 			productName = OpenGLES7;
 			productReference = 1F313EAE212DB72800B1D96B /* OpenGLES7.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F313EDA212F0AC700B1D96B /* OpenGLES8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F313EF0212F0AC900B1D96B /* Build configuration list for PBXNativeTarget "OpenGLES8" */;
+			buildPhases = (
+				1F313ED7212F0AC700B1D96B /* Sources */,
+				1F313ED8212F0AC700B1D96B /* Frameworks */,
+				1F313ED9212F0AC700B1D96B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLES8;
+			productName = OpenGLES8;
+			productReference = 1F313EDB212F0AC700B1D96B /* OpenGLES8.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1FCD763821286808000617E1 /* OpenGLES3 */ = {
@@ -708,6 +816,9 @@
 					1F313EAD212DB72800B1D96B = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					1F313EDA212F0AC700B1D96B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					1FCD763821286808000617E1 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -745,6 +856,7 @@
 				1FCD76892129C9F7000617E1 /* OpenGLES5 */,
 				1F313E80212C639800B1D96B /* OpenGLES6 */,
 				1F313EAD212DB72800B1D96B /* OpenGLES7 */,
+				1F313EDA212F0AC700B1D96B /* OpenGLES8 */,
 			);
 		};
 /* End PBXProject section */
@@ -774,6 +886,20 @@
 				84BD1576212E5CE40065B0F0 /* dungeon.png in Resources */,
 				1F313EB8212DB72800B1D96B /* Main.storyboard in Resources */,
 				1F313EC6212DB77700B1D96B /* test.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F313ED9212F0AC700B1D96B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F313EEA212F0AC900B1D96B /* LaunchScreen.storyboard in Resources */,
+				1F313EFD212F0C3000B1D96B /* DiffuseFragmentShader.glsl in Resources */,
+				1F313EE7212F0AC900B1D96B /* Assets.xcassets in Resources */,
+				1F313EE5212F0AC700B1D96B /* Main.storyboard in Resources */,
+				1F313EF4212F0AF900B1D96B /* dungeon.png in Resources */,
+				1F313EF3212F0AF500B1D96B /* test.png in Resources */,
+				1F313EFB212F0C0B00B1D96B /* DiffuseVertexShader.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +989,20 @@
 				84BD1574212E4C8B0065B0F0 /* AmbientCube.m in Sources */,
 				1F313EB2212DB72800B1D96B /* AppDelegate.m in Sources */,
 				1F313EC9212DB80400B1D96B /* AmbientSimpleEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F313ED7212F0AC700B1D96B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F313F0A212F1D9300B1D96B /* DiffuseCube.m in Sources */,
+				1F313EF8212F0BE000B1D96B /* DiffuseBaseEffect.m in Sources */,
+				1F313EE2212F0AC700B1D96B /* ViewController.m in Sources */,
+				1F313EED212F0AC900B1D96B /* main.m in Sources */,
+				1F313F07212F15F800B1D96B /* DiffuseSquare.m in Sources */,
+				1F313EDF212F0AC700B1D96B /* AppDelegate.m in Sources */,
+				1F313F00212F115D00B1D96B /* DiffuseBaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,6 +1096,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				1F313EBC212DB72900B1D96B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1F313EE3212F0AC700B1D96B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F313EE4212F0AC700B1D96B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F313EE8212F0AC900B1D96B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F313EE9212F0AC900B1D96B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1116,6 +1272,46 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice7";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F313EEE212F0AC900B1D96B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5D7TV84WEN;
+				INFOPLIST_FILE = OpenGLES8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F313EEF212F0AC900B1D96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5D7TV84WEN;
+				INFOPLIST_FILE = OpenGLES8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wildcard.opengles-practice8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "e033ff45-5d59-4468-b1d0-701630b2c8c7";
 				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
@@ -1450,6 +1646,15 @@
 			buildConfigurations = (
 				1F313EC1212DB72900B1D96B /* Debug */,
 				1F313EC2212DB72900B1D96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F313EF0212F0AC900B1D96B /* Build configuration list for PBXNativeTarget "OpenGLES8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F313EEE212F0AC900B1D96B /* Debug */,
+				1F313EEF212F0AC900B1D96B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

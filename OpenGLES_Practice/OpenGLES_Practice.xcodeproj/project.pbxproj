@@ -75,6 +75,8 @@
 		1FCD76AD212B14D6000617E1 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD76AC212B14D6000617E1 /* BaseModel.m */; };
 		1FCD76B1212B18A6000617E1 /* BaseSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD76B0212B18A6000617E1 /* BaseSquare.m */; };
 		8440609F212BB7CE001267B5 /* BaseCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 8440609E212BB7CD001267B5 /* BaseCube.m */; };
+		84BD1574212E4C8B0065B0F0 /* AmbientCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1573212E4C8B0065B0F0 /* AmbientCube.m */; };
+		84BD1576212E5CE40065B0F0 /* dungeon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BD1575212E5CE40065B0F0 /* dungeon.png */; };
 		84EC3637212D0CF60029FC04 /* JJBaseCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC3636212D0CF60029FC04 /* JJBaseCube.m */; };
 		84EC3639212D17C10029FC04 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EC3638212D17C10029FC04 /* test.png */; };
 		84FD23362126CA4A00AE4CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD23352126CA4A00AE4CAF /* AppDelegate.m */; };
@@ -194,6 +196,9 @@
 		1FCD76B0212B18A6000617E1 /* BaseSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSquare.m; sourceTree = "<group>"; };
 		8440609D212BB7CD001267B5 /* BaseCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCube.h; sourceTree = "<group>"; };
 		8440609E212BB7CD001267B5 /* BaseCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCube.m; sourceTree = "<group>"; };
+		84BD1572212E4C8B0065B0F0 /* AmbientCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbientCube.h; sourceTree = "<group>"; };
+		84BD1573212E4C8B0065B0F0 /* AmbientCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbientCube.m; sourceTree = "<group>"; };
+		84BD1575212E5CE40065B0F0 /* dungeon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon.png; sourceTree = "<group>"; };
 		84EC3635212D0CF60029FC04 /* JJBaseCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJBaseCube.h; sourceTree = "<group>"; };
 		84EC3636212D0CF60029FC04 /* JJBaseCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJBaseCube.m; sourceTree = "<group>"; };
 		84EC3638212D17C10029FC04 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
@@ -335,6 +340,7 @@
 		1F313EAF212DB72800B1D96B /* OpenGLES7 */ = {
 			isa = PBXGroup;
 			children = (
+				84BD1575212E5CE40065B0F0 /* dungeon.png */,
 				1F313EB0212DB72800B1D96B /* AppDelegate.h */,
 				1F313EB1212DB72800B1D96B /* AppDelegate.m */,
 				1F313EB3212DB72800B1D96B /* ViewController.h */,
@@ -369,6 +375,8 @@
 				1F313ED1212DBEAA00B1D96B /* AmbientModel.m */,
 				1F313ED4212DC32600B1D96B /* AmbientSquare.h */,
 				1F313ED5212DC32600B1D96B /* AmbientSquare.m */,
+				84BD1572212E4C8B0065B0F0 /* AmbientCube.h */,
+				84BD1573212E4C8B0065B0F0 /* AmbientCube.m */,
 			);
 			path = AmbientModels;
 			sourceTree = "<group>";
@@ -763,6 +771,7 @@
 				1F313ECD212DB84800B1D96B /* AmbientVertex.glsl in Resources */,
 				1F313ECF212DB86C00B1D96B /* AmbientFragment.glsl in Resources */,
 				1F313EBA212DB72900B1D96B /* Assets.xcassets in Resources */,
+				84BD1576212E5CE40065B0F0 /* dungeon.png in Resources */,
 				1F313EB8212DB72800B1D96B /* Main.storyboard in Resources */,
 				1F313EC6212DB77700B1D96B /* test.png in Resources */,
 			);
@@ -851,6 +860,7 @@
 				1F313ED2212DBEAA00B1D96B /* AmbientModel.m in Sources */,
 				1F313EC0212DB72900B1D96B /* main.m in Sources */,
 				1F313ED6212DC32600B1D96B /* AmbientSquare.m in Sources */,
+				84BD1574212E4C8B0065B0F0 /* AmbientCube.m in Sources */,
 				1F313EB2212DB72800B1D96B /* AppDelegate.m in Sources */,
 				1F313EC9212DB80400B1D96B /* AmbientSimpleEffect.m in Sources */,
 			);

@@ -11,6 +11,13 @@
 @implementation AmbientSimpleEffect {
     GLuint modelViewMatrixUniform_;
     GLuint projectionMatrixUniform_;
+    
+    // Texture
+    GLuint textureUniform_;
+    
+    // Ambient Light
+    GLuint lightColorUniform_;
+    GLuint lightAmbientIntensityUniform_;
 }
 
 - (instancetype)initWithVertexShader:(NSString *)vertexShader
@@ -18,6 +25,7 @@
     if ( self = [super init] ) {
         [self compileVertexShader:vertexShader fragmentShader:fragmentShader];
         _modelViewMatrix = GLKMatrix4Identity;
+        _projectionMatrix = GLKMatrix4Identity;
     }
     return self;
 }
@@ -26,6 +34,17 @@
     glUseProgram(_shaderProgram);
     glUniformMatrix4fv(modelViewMatrixUniform_, 1, 0, self.modelViewMatrix.m);
     glUniformMatrix4fv(projectionMatrixUniform_, 1, 0, self.projectionMatrix.m);
+    
+    
+    // Texture
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, self.texture);
+    glUniform1f(textureUniform_, 1);
+    
+    // Ambient Light
+    glUniform3f(lightColorUniform_, 1, 1, 1);
+    glUniform1f(lightAmbientIntensityUniform_, 0.8);
+    
 }
 
 - (void)compileVertexShader:(NSString *)vertexShader fragmentShader:(NSString *)fragmentShader {
@@ -37,11 +56,17 @@
     
     glBindAttribLocation(_shaderProgram, AmbientVertexAttributPosition, "a_Position");
     glBindAttribLocation(_shaderProgram, AmbientVertexAttributColor, "a_Color");
+    glBindAttribLocation(_shaderProgram, AmbientVertexAttributTexCoord, "a_TexCoord");
     
     glLinkProgram(_shaderProgram);
     
     modelViewMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ModelViewMatrix");
     projectionMatrixUniform_ = glGetUniformLocation(_shaderProgram, "u_ProjectionMatrix");
+    textureUniform_ = glGetUniformLocation(_shaderProgram, "u_Texture");
+    
+    //Setup Ambient Light
+    lightColorUniform_ = glGetUniformLocation(_shaderProgram, "u_Light.Color");
+    lightAmbientIntensityUniform_ = glGetUniformLocation(_shaderProgram, "u_Light.AmbientIntensity");
     
     GLint linkingSuccess;
     glGetProgramiv(_shaderProgram, GL_LINK_STATUS, &linkingSuccess);

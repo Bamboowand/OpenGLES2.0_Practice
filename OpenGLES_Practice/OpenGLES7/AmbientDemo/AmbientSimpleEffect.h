@@ -12,9 +12,10 @@
 
 @interface AmbientSimpleEffect : NSObject
 
-@property(nonatomic, assign)GLuint shaderProgram;
-@property(nonatomic, assign)GLKMatrix4 modelViewMatrix;
-@property(nonatomic, assign)GLKMatrix4 projectionMatrix;
+@property(nonatomic, assign) GLuint shaderProgram;
+@property(nonatomic, assign) GLKMatrix4 modelViewMatrix;
+@property(nonatomic, assign) GLKMatrix4 projectionMatrix;
+@property(nonatomic, assign) GLuint texture;
 
 - (instancetype)initWithVertexShader:(NSString *)vertexShader
                       fragmentShader:(NSString *)fragmentShader;

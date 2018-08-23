@@ -11,12 +11,14 @@
 
 typedef enum {
     AmbientVertexAttributPosition = 0,
-    AmbientVertexAttributColor
+    AmbientVertexAttributColor,
+    AmbientVertexAttributTexCoord
 } AmbientVertexAttributes;
 
 typedef struct{
     GLfloat Position[3];
     GLfloat Color[4];
+    GLfloat TexCoord[2];
 } AmbientVertex;
 
 #endif /* AmbientVertex_h */

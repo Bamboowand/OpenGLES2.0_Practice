@@ -49,6 +49,9 @@
         glEnableVertexAttribArray(AmbientVertexAttributColor);
         glVertexAttribPointer(AmbientVertexAttributColor, 4, GL_FLOAT, GL_FALSE, sizeof(AmbientVertex), (const GLvoid *)offsetof(AmbientVertex, Color));
         
+        glEnableVertexAttribArray(AmbientVertexAttributTexCoord);
+        glVertexAttribPointer(AmbientVertexAttributTexCoord, 2, GL_FLOAT, GL_FALSE, sizeof(AmbientVertex), (const GLvoid *)offsetof(AmbientVertex, TexCoord));
+        
         glBindVertexArrayOES(0);
         glBindBuffer(GL_ARRAY_BUFFER, 0);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
@@ -61,14 +64,15 @@
     GLKMatrix4 modelViewMatrix = GLKMatrix4Identity;
     modelViewMatrix = GLKMatrix4Translate(modelViewMatrix, self.position.x, self.position.y, self.position.z);
     modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, self.rotationX, 1, 0, 0);
-    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, self.rotationX, 0, 1, 0);
-    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, self.rotationX, 0, 0, 1);
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, self.rotationY, 0, 1, 0);
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, self.rotationZ, 0, 0, 1);
     modelViewMatrix = GLKMatrix4Scale(modelViewMatrix, self.scale, self.scale, self.scale);
     return modelViewMatrix;
 }
 
 - (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix {
     _shaderProgram.modelViewMatrix = GLKMatrix4Multiply(parentModelViewMatrix, [self modelViewMatrix]);
+    _shaderProgram.texture = self.texture;
     [_shaderProgram prepareToDraw];
     glBindVertexArrayOES(vao_);
     glDrawElements(GL_TRIANGLES, indexCount_, GL_UNSIGNED_BYTE, 0);
@@ -76,6 +80,22 @@
 }
 
 - (void)updateWithDelta:(NSTimeInterval)dt {
+    
+}
+
+- (void)loadTexture:(NSString *)fileName {
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+    NSDictionary *options = @{ GLKTextureLoaderOriginBottomLeft : @YES };
+    NSError *error = nil;
+    GLKTextureInfo *info = [GLKTextureLoader textureWithContentsOfFile:path options:options error:&error];
+    
+    if ( info == nil ) {
+        NSLog(@"Error loafing texture: %@", error.localizedDescription);
+        exit(1);
+    }
+    else {
+        self.texture = info.name;
+    }
     
 }
 @end

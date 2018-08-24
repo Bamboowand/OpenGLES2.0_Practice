@@ -14,13 +14,21 @@
 
 @interface DiffuseBaseModel : NSObject
 
-@property (nonatomic, strong)DiffuseBaseEffect *shader;
+@property (nonatomic, strong) DiffuseBaseEffect *shader;
+@property (nonatomic, assign) GLKVector3 position;
+@property (nonatomic) float rotationX;
+@property (nonatomic) float rotationY;
+@property (nonatomic) float rotationZ;
+@property (nonatomic) float scale;
+@property (nonatomic) GLuint texture;
+
 - (instancetype)initWithName:(char *)name
                       shader:(DiffuseBaseEffect *)shader
                    verteices:(DiffuseVertex *)verteices
                  vertexCount:(unsigned int)vertexCount
                     indeices:(GLubyte *)indeices
                   indexCount:(unsigned int)indexCount;
-- (void)render;
+- (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix;
 - (void)updateWithDelta:(NSTimeInterval)dt;
+- (void)loadTexture:(NSString *)fileName;
 @end

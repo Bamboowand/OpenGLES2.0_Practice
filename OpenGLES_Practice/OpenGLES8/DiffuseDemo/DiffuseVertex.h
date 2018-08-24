@@ -11,12 +11,16 @@
 
 typedef enum {
     DiffuseVertexAttributPosition = 0,
-    DiffuseVertexAttributColor
+    DiffuseVertexAttributColor,
+    DiffuseVertexAttributTexCoord,
+    DiffuseVertexAttributNormal
 } DiffuseVertexAttributes;
 
 typedef struct{
     GLfloat Position[3];
     GLfloat Color[4];
+    GLfloat TexCoord[2];
+    GLfloat Normal[3];
 } DiffuseVertex;
 
 #endif /* DiffuseVertex_h */

@@ -12,7 +12,10 @@
 
 @interface DiffuseBaseEffect : NSObject
 
-@property(nonatomic, assign)GLuint shaderProgram;
+@property(nonatomic, assign) GLuint shaderProgram;
+@property(nonatomic, assign) GLKMatrix4 modelViewMatrix;
+@property(nonatomic, assign) GLKMatrix4 projectionMatrix;
+@property(nonatomic, assign) GLint texture;
 
 - (instancetype)initWithVertexShader:(NSString *)vertexShader
                       fragmentShader:(NSString *)fragmentShader;

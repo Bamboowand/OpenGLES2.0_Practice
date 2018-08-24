@@ -10,6 +10,7 @@
 #import <GLKit/GLKit.h>
 #import "DiffuseBaseEffect.h"
 #import "DiffuseSquare.h"
+#import "DiffuseCube.h"
 
 @interface ViewController : GLKViewController
 

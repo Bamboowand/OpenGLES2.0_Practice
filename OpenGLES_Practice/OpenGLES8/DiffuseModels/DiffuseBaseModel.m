@@ -27,6 +27,12 @@
         vertexCount_ = vertexCount;
         indexCount_ = indexCount;
         
+        self.position = GLKVector3Make(0, 0, 0);
+        self.rotationX = 0;
+        self.rotationY = 0;
+        self.rotationZ = 0;
+        self.scale = 1.0;
+        
         glGenVertexArraysOES(1, &vao_);
         glBindVertexArrayOES(vao_);
         
@@ -44,6 +50,12 @@
         glEnableVertexAttribArray(DiffuseVertexAttributColor);
         glVertexAttribPointer(DiffuseVertexAttributColor, 4, GL_FLOAT, GL_FALSE, sizeof(DiffuseVertex), (const GLvoid *)offsetof(DiffuseVertex, Color));
         
+        glEnableVertexAttribArray(DiffuseVertexAttributTexCoord);
+        glVertexAttribPointer(DiffuseVertexAttributTexCoord, 2, GL_FLOAT, GL_FALSE, sizeof(DiffuseVertex), (const GLvoid *)offsetof(DiffuseVertex, TexCoord));
+        
+        glEnableVertexAttribArray(DiffuseVertexAttributNormal);
+        glVertexAttribPointer(DiffuseVertexAttributNormal, 3, GL_FLOAT, GL_FALSE, sizeof(DiffuseVertex), (const GLvoid *)offsetof(DiffuseVertex, Normal));
+        
         glBindVertexArrayOES(0);
         glBindBuffer(GL_ARRAY_BUFFER, 0);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
@@ -51,7 +63,19 @@
     return self;
 }
 
-- (void)render {
+- (GLKMatrix4)modelViewMatrix {
+    GLKMatrix4 modelViewMatrix = GLKMatrix4Identity;
+    modelViewMatrix = GLKMatrix4Translate(modelViewMatrix, self.position.x, self.position.y, self.position.z);
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotationX, 1, 0, 0);
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotationY, 0, 1, 0);
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotationZ, 0, 0, 1);
+    modelViewMatrix = GLKMatrix4Scale(modelViewMatrix, self.scale, self.scale, self.scale);
+    return modelViewMatrix;
+}
+
+- (void)renderWithParentModelViewMatrix:(GLKMatrix4)parentModelViewMatrix {
+    _shader.modelViewMatrix = GLKMatrix4Multiply(parentModelViewMatrix, [self modelViewMatrix]);
+    _shader.texture = self.texture;
     [_shader prepareToDraw];
     glBindVertexArrayOES(vao_);
     glDrawElements(GL_TRIANGLES, indexCount_, GL_UNSIGNED_BYTE, 0);
@@ -60,6 +84,20 @@
 
 - (void)updateWithDelta:(NSTimeInterval)dt {
     
+}
+
+- (void)loadTexture:(NSString *)fileName {
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+    NSError *error = nil;
+    NSDictionary *options = @{ GLKTextureLoaderOriginBottomLeft : @YES };
+    GLKTextureInfo *info = [GLKTextureLoader textureWithContentsOfFile:path options:options error:&error];
+    if ( info == nil ) {
+        NSLog(@"Error loading texture: %@", error.localizedDescription);
+        exit(1);
+    }
+    else {
+        self.texture = info.name;
+    }
 }
 
 @end
